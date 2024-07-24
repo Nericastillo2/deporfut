@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPORFUT.TV</title>
+    <link rel="icon" href="DEPORFU.ico">
+    <style>
+
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('impact.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 2px -2px gray;
+            center
+        }
+        header h1 {
+            font-family: 'MiFuente', sans-serif;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px #000;
+            margin: 0;
+        }
+        .menu-icon {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-image: url('menu-icon.png'); /* URL de tu imagen de icono personalizada */
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: #343a40;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .agenda {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .agenda-header {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+        .agenda-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e9ecef;
+            cursor: pointer;
+        }
+        .agenda-item:last-child {
+            border-bottom: none;
+        }
+        .agenda-item:hover {
+            background-color: #e9ecef;
+        }
+        .agenda-item img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .transmission-options {
+            display: none;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+        }
+        .transmission-options a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }  footer {
+            background-color: #333; /* Color de fondo negro */
+            color: #fff; /* Color del texto en blanco */
+            padding: 20px; /* Espaciado interno */
+        }.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }.messi{
+            background-color: #28a745;
+        }#me {
+            color: #28a745;
+            background-color: #28a745;
+
+         }#ME{
+			color: #fff;
+
+		}
+    </style>
+</head>
+<body>
+     <header>
+        <a href="Index.html"><h1 id="ME">DEPORFUTTV</h1></a></center>
+        <div class="menu-icon" onclick="toggleMenu()">MENU</div>
+    </header>
+    <div class="menu" id="menu">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+        <div><center><h1>DEPORFUTTV</h1></center></div>
+    </div><div><center><p><b>Deporfut TV En Vivo Online Directo. Canales Gratis Para Ver Fútbol Argentino,, Copa Sudamericana, Copa Libertadores, Champions League y Copa Mundial.</b></p></center></div><center><h2>VER DEPORFUTTV EN VIVO</h2></center>
+    <div class="agenda">
+        <div class="agenda-header">Agenda - Martes 23 de julio de 2024</div>
+        <div class="agenda-item" onclick="showOptions(this)">
+            <img src="juegosolimpicos.png" alt="icono"> <!-- URL del icono personalizado -->
+            <span> JUEGOS OLIMPICOS:Argentina vs. Marruecos</span>
+            <span>10:00</span>
+        </div>
+        <div class="transmission-options">
+            <a href="index7.html">
+                TV PUBLICA
+            </a>
+            <a href="transmision2.html"></a>
+        </div>
+        <div class="agenda-item" onclick="showOptions(this)">
+            <img src="lpf-liga-profesional-.png" alt="icono"> <!-- URL del icono personalizado -->
+            <span>LPF:Talleres vs. Defensa y Justicia </span>
+            <span>17:00</span>
+        </div>
+        <div class="transmission-options">
+            <a href="index5.html">TNT_Sports</a>
+            <a href="transmision2.html"></a>
+        </div>
+        <div class="agenda-item" onclick="showOptions(this)">
+            <img src="lpf-liga-profesional-.png" alt="icono"> <!-- URL del icono personalizado -->
+            <span>LPF:Sarmiento vs. Racing</span>
+            <span>17:15</span>
+        </div>
+        <div class="transmission-options">
+            <a href="index2.html">espn premium</a>
+            <a href="transmision2.html"></a>
+        </div>
+        <div class="agenda-item" onclick="showOptions(this)">
+            <img src="lpf-liga-profesional-.png" alt="icono"> <!-- URL del icono personalizado -->
+            <span>LPF:	Huracán vs. Estudiantes</span>
+            <span>19:3o</span>
+        </div>
+        <div class="transmission-options">
+            <a href="index2.html">espn premium</a>
+            
+
+            
+        </div>
+
+        <div class="agenda-item" onclick="showOptions(this)"><img src="copa-sulamericana-logo.png" alt="icono"> <!-- URL del icono personalizado -->
+            <span>sudamericana:boca vs. independiente del valle</span>
+            <span>21:30</span>
+        </div>
+        <div class="transmission-options">
+            <a href="index6.html">DSPORTS</a>
+            <a href="transmision2.html"></a></div>
+    </div><section> <center><h1 id="me">VER CANALES ONLINE</h1></center></section>
+    <section><div class="container">
+        <div class="card">
+            <img src="TYC_SPORTS..png" alt="TyC Sports">
+            <p>Ver TyC Sports online en vivo y en directo.</p>
+            <a href="index3.html" class="btn">Ver Canal</a>
+        </div>
+        <div class="card">
+            <img src="ESPN_Premium_logo.png" alt="espn premium">
+            <p>Ver espn premium online en vivo y en directo.</p>
+            <a href="index2.html" class="btn">Ver Canal</a>
+        </div>
+        <div class="card">
+            <img src="TNT_Sports-2024.PNG" alt="TNT Sports">
+            <p>Ver TNT Sports online en vivo y en directo.</p>
+            <a href="index5.html" class="btn">Ver Canal</a>
+        </div><div class="card">
+            <img src="ESPN.png" alt="ESPN">
+            <p>Ver TNT Sports online en vivo y en directo.</p>
+            <a href="index4.html" class="btn">Ver Canal</a>
+        </div>
+        <div class="card">
+            <img src="DSPORTS.png" alt="DSPORTS">
+            <p>Ver DSPORTS online en vivo y en directo.</p>
+            <a href="index6.html" class="btn">Ver Canal</a>
+        </div><div class="card">
+            <img src="TVP.png" alt="tvp">
+            <p>Ver TV PUBLICA online en vivo y en directo.</p>
+            <a href="index7.html" class="btn">Ver Canal</a>
+        </div>
+        
+        
+    </div></section>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
+        function showOptions(element) {
+            var options = element.nextElementSibling;
+            if (options.style.display === 'block') {
+                options.style.display = 'none';
+            } else {
+                options.style.display = 'block';
+            }
+        }
+    </script>
+<footer>
+    <!-- Información de contacto, enlaces, etc. -->
+    <CENTER><p>DEPORFUTTV TODOS LOS DERECHOS RESERVADOS  2024 ©,DMCA</p>
+</footer></CENTER></body>
+</html>
